@@ -2,13 +2,15 @@ import styled from "styled-components";
 import Wrapper from "../assets/wrappers/LandingPage";
 import main from "../assets/images/main.svg";
 import { Link } from "react-router-dom";
-import { MainNavbar } from "../components";
+import { MainNavbar, DateTimePicker } from "../components";
 
 const Landing = () => {
   return (
     <Wrapper>
       <MainNavbar />
+
       <div className="container page">
+        <DateTimePicker />
         <div className="info">
           <h1>
             hotel <span>tracking</span> app
