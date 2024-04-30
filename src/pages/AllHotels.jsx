@@ -15,7 +15,6 @@ export const loader = async ({ request }) => {
       params,
     });
 
-    console.log("data", data);
     return {
       data,
       searchValues: { ...params },
