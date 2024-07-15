@@ -9,13 +9,13 @@ export const features = [
     id: 2,
     iconSrc: "/img/icons/1/hot-air-balloon.svg",
     title: "Memorable experiences",
-    text: "Browse and book tours and activities so incredible, you'll want to tell your friends.",
+    text: "Browse and book cat hotel so incredible, you'll want to tell your friends.",
   },
   {
     id: 3,
     iconSrc: "/img/icons/1/diamond.svg",
     title: "Quality at our core",
-    text: "High-quality standards. Millions of reviews. A tourz company.",
+    text: "High-quality standards. Millions of reviews. A cat hotel company.",
   },
   {
     id: 4,

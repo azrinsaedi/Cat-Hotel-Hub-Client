@@ -2420,6 +2420,7 @@ h6 {
   right: 0;
   background-color: white;
   z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .header.-type-2 .header__container {

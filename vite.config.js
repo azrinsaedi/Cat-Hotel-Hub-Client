@@ -1,34 +1,26 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-
-// import basicSsl from "@vitejs/plugin-basic-ssl";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // server: {
-  //   https: {
-  //     key: fs.readFileSync("/etc/letsencrypt/live/azrinsaedi.com/privkey.pem"),
-  //     cert: fs.readFileSync(
-  //       "/etc/letsencrypt/live/azrinsaedi.com/fullchain.pem"
-  //     ),
-  //   },
-  // },
   server: {
     proxy: {
-      "/api": {
-        target: "http://localhost:5100/api",
+      '/api': {
+        target: 'http://localhost:5100/api',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-    // https: true,
-    // plugins: [basicSsl()],
+    // https: {
+    //   key: 'key/private.key',
+    //   cert: 'key/certificate.crt',
+    // },
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 });

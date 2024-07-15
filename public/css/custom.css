@@ -317,7 +317,7 @@
   transition: 0.4s;
 }
 
-/* Azrin */
+/* Addition */
 img.img {
   max-width: 50px;
   height: 50px;
@@ -325,4 +325,81 @@ img.img {
 
 i.-light-5 {
   color: var(--color-light-5);
+}
+
+.headerDropdown .headerDropdown__container {
+  padding: 15px 0px;
+}
+
+.headerDropdown__item {
+  padding: 0px 15px;
+}
+
+.headerDropdown__item:hover {
+  background-color: var(--color-light-1);
+}
+
+.img.profile {
+  border-radius: 50%;
+}
+
+.profile_dropdown {
+  font-weight: 100;
+  color: #000;
+}
+
+.profile_dropdown:hover {
+  color: #000;
+}
+
+.profile_icon {
+  vertical-align: middle;
+  color: #000;
+}
+
+.searchForm.-type-1 .searchFormItem__content {
+  width: 100%;
+}
+
+.searchForm.-type-1 .searchFormItem__content > div {
+  color: #000;
+}
+
+.searchForm.-type-1 .searchForm__form {
+  grid-template-columns: repeat(3, 1fr);
+}
+.container-switchTab {
+  display: flex;
+}
+
+.currency span.totalPayment {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.service button.delete {
+  font-size: 25px;
+  padding-top: 34px;
+}
+
+.stripe.checkout {
+  position: relative;
+  /* width: 360px; */
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border, #e7e6e6);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  height: 100%;
+}
+
+.add-pet {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.text-50 svg {
+  width: 1em; /* Makes the width follow the font-size */
+  height: 1em; /* Makes the height follow the font-size */
 }

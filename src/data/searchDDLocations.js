@@ -7,4 +7,6 @@ export const locations = [
   { id: 6, choice: "Tokio", type: "Destinations" },
   { id: 7, choice: "Africa", type: "Continent" },
   { id: 8, choice: "New Zealand", type: "Country" },
+  { id: 9, choice: "Kuala Lumpur", type: "City" },
+  { id: 10, choice: "Azrini", type: "City" },
 ];
