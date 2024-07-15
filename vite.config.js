@@ -6,6 +6,10 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   server: {
+    https: true,
+    host: 'loafycat.com',
+    port: 443,
+    strictPort: true,
     proxy: {
       '/api': {
         target: 'http://localhost:5100/api',
