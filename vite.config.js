@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   server: {
-    // https: true,
+    https: true,
     host: '0.0.0.0',
     port: 443,
     strictPort: true,
@@ -17,10 +17,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-    // https: {
-    //   key: 'key/private.key',
-    //   cert: 'key/certificate.crt',
-    // },
+    https: {
+      key: 'key/private.key',
+      cert: 'key/certificate.crt',
+    },
   },
   resolve: {
     alias: {
