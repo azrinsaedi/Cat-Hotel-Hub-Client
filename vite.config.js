@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     https: true,
-    host: 'loafycat.com',
+    host: '0.0.0.0',
     port: 443,
     strictPort: true,
     proxy: {
