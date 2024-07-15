@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     https: true,
-    host: '0.0.0.0',
+    host: 'localhost',
     port: 443,
     strictPort: true,
     proxy: {
@@ -19,7 +19,7 @@ export default defineConfig({
     },
     https: {
       key: 'key/private.key',
-      cert: 'key/certificate.crt',
+      cert: 'key/certificate.cer',
     },
   },
   resolve: {
