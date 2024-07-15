@@ -19,7 +19,7 @@ export default defineConfig({
     },
     https: {
       key: 'key/private.key',
-      cert: 'key/certificate.cer',
+      cert: 'key/certificate.crt',
     },
   },
   resolve: {
