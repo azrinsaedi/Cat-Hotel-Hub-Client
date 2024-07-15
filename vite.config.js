@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     // https: true,
     // host: 'localhost',
-    // port: 80,
+    port: 443,
     // strictPort: true,
     proxy: {
       '/api': {
