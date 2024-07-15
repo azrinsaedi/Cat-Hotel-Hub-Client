@@ -17,10 +17,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-    // https: {
-    //   key: 'key/private.key',
-    //   cert: 'key/certificate.crt',
-    // },
+    https: {
+      key: 'key/private.key',
+      cert: 'key/certificate.crt',
+    },
   },
   resolve: {
     alias: {
