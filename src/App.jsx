@@ -3,9 +3,19 @@ import './styles/style.css';
 import Aos from 'aos';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage, { loader as MainPageLoader } from './pages/MainPage';
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import AccountDashboard, {
+  loader as accountLoader,
+} from './components/AccountDashboard';
+import AccountLogin, {
+  action as loginAccountAction,
+} from './pages/AccountLogin';
+
+export const checkDefaultTheme = () => {
+  const isDarkTheme = localStorage.getItem('darkTheme') === 'true';
+  document.body.classList.toggle('dark-theme', isDarkTheme);
+  return isDarkTheme;
+};
+checkDefaultTheme();
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +24,22 @@ function App() {
       index: true,
       element: <MainPage />,
       loader: MainPageLoader,
+    },
+    {
+      path: 'account',
+      children: [
+        {
+          path: 'dashboard',
+          element: <AccountDashboard />,
+          loader: accountLoader,
+          index: true,
+        },
+        {
+          path: 'login',
+          element: <AccountLogin />,
+          action: loginAccountAction,
+        },
+      ],
     },
   ]);
 

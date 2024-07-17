@@ -3,6 +3,7 @@ import MobileMenu from './MobileMenu';
 
 import { Link, useNavigate } from 'react-router-dom';
 import customFetch from '../utils/customFetch';
+import UserMenu from './UserMenu';
 
 export default function Header() {
   const [user, setUser] = useState(null);
