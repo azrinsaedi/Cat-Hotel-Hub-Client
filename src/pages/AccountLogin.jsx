@@ -1,6 +1,6 @@
 import MetaComponent from '@/components/common/MetaComponent';
 import Header from '../components/Header';
-import { Form, Link } from 'react-router-dom';
+import { Form, Link, redirect } from 'react-router-dom';
 import customFetch from '@/utils/customFetch';
 import { toast } from 'react-toastify';
 import LoginBtn from '../components/LoginBtn';
